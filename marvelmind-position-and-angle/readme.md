@@ -44,15 +44,32 @@ Find the .exe file and follow the instructions to download.
 5. Wait for all red boxes in the table of distances to disappear. If red boxes do not disappear, beacons cannot see each other. Move them so that they can communicate.
 6. If table of distances is not visible, click **Submap 0** and the table of distances will appear.
 7. Connect the hedgehog to the second computer / Raspberry Pi using the USB to micro-USB cable.
-8. Edit the files from GitHub. Need to change the tty port in all files to the one that you are using. On a Mac, open Terminal and run
+8. Edit the files you are working in from GitHub. Need to change the tty port in all files to the one that you are using. On a Mac, open Terminal and run
 ```
 ls /dev
 ```
 Find the port number that looks different from the rest. It should look like:
 - /dev/ttyACM0 - typical for Linux
 - /dev/tty.usbmodem1451 - typical for Mac OS X
-9. Run the program.
-7. When you are done, make sure to turn off all beacons.
+Use this to replace the tty value currently there.
+9. Always plug the USB cable into the same ports.
+10. Open two terminal windows. In the first, run the GUI (server)
+```
+python3 finalGUI.py
+```
+11. Click 
+```
+Place Default Sound
+```
+Place sound somewhere on the map. Then click, 
+```
+Use Marvelmind
+```
+12. Open Terminal and run the program.
+```
+python3 example.py
+```
+13. When you are done, make sure to turn off all beacons.
 
 ---
 
