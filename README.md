@@ -76,8 +76,13 @@ python3 spatializer_pi.py
 * `Audiotemp.py` is a helper file for the GUI that calculates the index for audio that is played on `spatializer_demo.py`
 
 #### Inside marvelmind-position-and-angle:
-
+* Folder that links to the MarvelMind GitHub
+* `readme.md` Instructions on how to set up the localizers
 
 #### Inside read-gyro-and-localization:
+* `example.py` the code that transfers locations to the GUI
+* `marvelmind.py` is a helper file for example.py
+* `orientation.py`is a helper file for example.py
+* `output.py` shows the output produced by example.py
 
 ### Bugs
